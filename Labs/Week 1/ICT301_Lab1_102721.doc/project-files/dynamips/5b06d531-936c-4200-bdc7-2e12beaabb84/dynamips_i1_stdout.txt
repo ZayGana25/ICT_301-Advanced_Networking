@@ -1,0 +1,7 @@
+cygwin warning:
+  MS-DOS style path detected: C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips
+  Preferred POSIX equivalent is: /cygdrive/c/Users/Isaia/OneDrive/Desktop/Advanced Networking - ICT 301/Labs/Week 1/ICT301_Lab1_102721.doc/project-files/dynamips
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+C3725 'Ghost': generic_nvram_extract_config: Unknown error -61605

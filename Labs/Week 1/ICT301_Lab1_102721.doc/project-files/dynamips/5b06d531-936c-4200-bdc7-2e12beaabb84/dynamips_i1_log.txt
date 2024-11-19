@@ -1,0 +1,56 @@
+Oct 27 17:10:44.719 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 27 17:10:44.719 HYPERVISOR: Started on IP = localhost, TCP port = 54447.
+Oct 27 17:10:44.920 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 27 17:10:44.920 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips 
+Oct 27 17:10:44.927 GENERAL: working_dir=C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips
+Oct 27 17:10:44.927 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips\5b06d531-936c-4200-bdc7-2e12beaabb84 
+Oct 27 17:10:44.927 GENERAL: working_dir=C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips\5b06d531-936c-4200-bdc7-2e12beaabb84
+Oct 27 17:10:44.927 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Oct 27 17:10:44.928 VM: VM R1 created.
+Oct 27 17:10:44.929 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Isaia/OneDrive/Desktop/C3725-AD.BIN 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.1834.0000 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 27 17:10:44.930 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-2T 
+Oct 27 17:10:45.692 HYPERVISOR: exec_cmd: nio create_udp udp-adaa95f3-4a1c-4781-8b74-567dc67001a7 10002 127.0.0.1 10003 
+Oct 27 17:10:46.043 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-adaa95f3-4a1c-4781-8b74-567dc67001a7 
+Oct 27 17:10:46.045 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 27 17:59:13.180 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 27 17:59:13.182 VM: VM Ghost created.
+Oct 27 17:59:13.223 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Isaia/OneDrive/Desktop/C3725-AD.BIN 
+Oct 27 17:59:13.223 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 27 17:59:13.223 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips\C3725-AD.BIN-128.ghost 
+Oct 27 17:59:13.223 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 27 17:59:13.227 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 27 17:59:13.227 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 27 17:59:13.547 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 27 17:59:13.547 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 27 17:59:13.671 VM: VM Ghost shutdown.
+Oct 27 17:59:13.686 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 27 17:59:13.688 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 27 17:59:13.688 VM: VM Ghost destroyed.
+Oct 27 17:59:13.690 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 27 17:59:13.690 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips\C3725-AD.BIN-128.ghost 
+Oct 27 17:59:13.700 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 27 17:59:13.700 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Oct 27 17:59:13.700 HYPERVISOR: exec_cmd: vm start R1 
+Oct 27 17:59:44.019 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 27 17:59:44.024 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 27 19:19:18.885 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 27 19:19:18.912 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips\C3725-AD.BIN-128.ghost 
+Oct 27 19:19:18.913 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 27 19:19:34.586 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 27 19:19:34.588 HYPERVISOR: exec_cmd: vm stop R1 
+Oct 27 19:19:34.671 VM: VM R1 shutdown.
+Oct 27 19:19:34.672 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 27 19:19:38.650 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 27 19:19:38.652 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Isaia\OneDrive\Desktop\Advanced Networking - ICT 301\Labs\Week 1\ICT301_Lab1_102721.doc\project-files\dynamips\C3725-AD.BIN-128.ghost 
+Oct 27 19:19:38.652 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 27 19:19:38.660 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Oct 27 19:19:38.664 HYPERVISOR: exec_cmd: vm start R1 
+Oct 27 19:20:08.924 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 27 19:20:08.932 HYPERVISOR: exec_cmd: vm extract_config R1 
